@@ -13,6 +13,10 @@
 		5627362523C6239D00A352A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5627362423C6239D00A352A0 /* Assets.xcassets */; };
 		5627362823C6239D00A352A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5627362623C6239D00A352A0 /* LaunchScreen.storyboard */; };
 		5627363323C6239D00A352A0 /* ServiceCallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627363223C6239D00A352A0 /* ServiceCallTests.swift */; };
+		5627364323C6245400A352A0 /* ServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627364223C6245400A352A0 /* ServiceRequest.swift */; };
+		5627364623C624FC00A352A0 /* ListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627364523C624FC00A352A0 /* ListModel.swift */; };
+		5627364923C6254A00A352A0 /* TableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627364823C6254A00A352A0 /* TableCellView.swift */; };
+		5627364B23C625A500A352A0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5627364A23C625A500A352A0 /* Utilities.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,10 @@
 		5627362E23C6239D00A352A0 /* ServiceCallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ServiceCallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5627363223C6239D00A352A0 /* ServiceCallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceCallTests.swift; sourceTree = "<group>"; };
 		5627363423C6239D00A352A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5627364223C6245400A352A0 /* ServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceRequest.swift; sourceTree = "<group>"; };
+		5627364523C624FC00A352A0 /* ListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListModel.swift; sourceTree = "<group>"; };
+		5627364823C6254A00A352A0 /* TableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellView.swift; sourceTree = "<group>"; };
+		5627364A23C625A500A352A0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +85,9 @@
 		5627361C23C6239B00A352A0 /* ServiceCall */ = {
 			isa = PBXGroup;
 			children = (
+				5627364723C6252800A352A0 /* Helper Class */,
+				5627364423C624DD00A352A0 /* Model */,
+				5627364123C6242F00A352A0 /* API Parser */,
 				5627361D23C6239B00A352A0 /* AppDelegate.swift */,
 				5627361F23C6239B00A352A0 /* ViewController.swift */,
 				5627362123C6239B00A352A0 /* Main.storyboard */,
@@ -94,6 +105,31 @@
 				5627363423C6239D00A352A0 /* Info.plist */,
 			);
 			path = ServiceCallTests;
+			sourceTree = "<group>";
+		};
+		5627364123C6242F00A352A0 /* API Parser */ = {
+			isa = PBXGroup;
+			children = (
+				5627364223C6245400A352A0 /* ServiceRequest.swift */,
+			);
+			path = "API Parser";
+			sourceTree = "<group>";
+		};
+		5627364423C624DD00A352A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5627364523C624FC00A352A0 /* ListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5627364723C6252800A352A0 /* Helper Class */ = {
+			isa = PBXGroup;
+			children = (
+				5627364823C6254A00A352A0 /* TableCellView.swift */,
+				5627364A23C625A500A352A0 /* Utilities.swift */,
+			);
+			path = "Helper Class";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +233,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5627364B23C625A500A352A0 /* Utilities.swift in Sources */,
 				5627362023C6239B00A352A0 /* ViewController.swift in Sources */,
 				5627361E23C6239B00A352A0 /* AppDelegate.swift in Sources */,
+				5627364923C6254A00A352A0 /* TableCellView.swift in Sources */,
+				5627364323C6245400A352A0 /* ServiceRequest.swift in Sources */,
+				5627364623C624FC00A352A0 /* ListModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
